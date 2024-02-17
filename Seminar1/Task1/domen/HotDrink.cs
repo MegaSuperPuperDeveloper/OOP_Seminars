@@ -1,4 +1,5 @@
-class HotDrink : Product {
+class HotDrink : Product 
+{
     private double temp;
 
     public HotDrink(long id, string name, double price, int place, double temp) : base(id, name, price, place)
@@ -6,18 +7,18 @@ class HotDrink : Product {
         this.temp = temp;
     }
 
-    public void setTemp(double temp) {
+    public void setTemp(double temp) 
+    {
         this.temp = temp;
     }
 
-    public double getTemp() {
+    public double getTemp() 
+    {
         return temp;
     }
 
-    public string toString() {
+    public new string toString() 
+    {
         return $"HotDrink [{base.toString()}, temp={temp}]";
     }
-
-
-
 }
