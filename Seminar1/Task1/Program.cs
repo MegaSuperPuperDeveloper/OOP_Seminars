@@ -1,5 +1,6 @@
 ﻿public class Program {
     static void Main() {
+        // Создание экземпляров из разных классов.
         Product product1 = new Product(1, "Chip Lays", 132.90, 13);
         Product product2 = new Product(2, "Chocolate", 10.90, 3);
         Product product3 = new Product(3, "Candy", 1300, 134);
@@ -9,7 +10,7 @@
         HotDrink tea = new HotDrink(6, "Tea", 70.0, 1, 90);
         HotDrink hotChocolate = new HotDrink(7, "Hot Chocolate", 120.0, 1, 75);
 
-        List<Product> ourList = new List<Product>();
+        List<Product> ourList = new List<Product>(); // Общий список всех экземпляров.
         List<Bottle> ourList1 = new List<Bottle>();
         List<HotDrink> ourList2 = new List<HotDrink>();
         List<Product> ourList3 = new List<Product>();
@@ -33,17 +34,17 @@
         Display display = new Display();
         CoinDespenser coinDespenser = new CoinDespenser();
 
-        VendingMachine machine = new VendingMachine(holder, display, coinDespenser, ourList);
+        VendingMachine machine = new VendingMachine(holder, display, coinDespenser, ourList); // Создание автомата
 
-        foreach (Product item in ourList3) {
+        foreach (Product item in ourList3) { // Перечисление элементов относящиеся к Product.
             System.Console.WriteLine(item.toString());
         }
 
-        foreach (Bottle item in ourList1) {
+        foreach (Bottle item in ourList1) { // Перечисление элементов относящиеся к Bottle.
             System.Console.WriteLine(item.toString());
         }
 
-        foreach (HotDrink item in ourList2) {
+        foreach (HotDrink item in ourList2) { // Перечисление элементов относящиеся к HotDrink.
             System.Console.WriteLine(item.toString());
         }
         
