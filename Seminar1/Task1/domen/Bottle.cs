@@ -15,8 +15,8 @@ class Bottle : Product
         return volume;
     }
 
-    public string toString() {
+    public string toString()
+    {
         return $"Bottle [{base.toString()}, volume={volume}]";
     }
-
 }
