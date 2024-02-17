@@ -1,8 +1,8 @@
 class Product {
-    private long id;
-    private string name;
-    private double price;
-    private int place;
+    protected long id;
+    protected string name;
+    protected double price;
+    protected int place;
 
     public Product(long id, string name, double price, int place) {
         this.id = id;
