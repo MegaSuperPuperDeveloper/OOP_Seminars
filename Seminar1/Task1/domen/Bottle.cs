@@ -7,7 +7,8 @@ class Bottle : Product
         this.volume = volume;
     }
 
-    public void setVolume(double volume) {
+    public void setVolume(double volume) 
+    {
         this.volume = volume;
     }
 
@@ -15,7 +16,7 @@ class Bottle : Product
         return volume;
     }
 
-    public string toString()
+    public new string toString()
     {
         return $"Bottle [{base.toString()}, volume={volume}]";
     }
